@@ -33,6 +33,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <body>
 
+<audio id="background-audio" autoplay loop muted>
+  <source src="images/WebMusic.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const audio = document.getElementById('background-audio');
+  // Try to play
+  audio.play().catch(() => {
+    console.log('Autoplay blocked, will play on first user interaction');
+  });
+});
+
+// Optional: unmute after first click anywhere on the page
+document.addEventListener('click', () => {
+  const audio = document.getElementById('background-audio');
+  audio.muted = false;
+  audio.play();
+}, { once: true });
+</script>
+
+
   
 <!--Homepage-->
 <section class="homepage-section" id="home">
