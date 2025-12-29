@@ -482,38 +482,40 @@ html {
   overflow: hidden;
   border: 2px solid #bfa14a;
   border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* ADD THIS */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .envelope:hover {
-  transform: scale(1.08); /* slightly bigger zoom */
+  transform: scale(1.08);
   box-shadow: 
     0 0 10px #fff176,
     0 0 20px #FFD700,
     0 0 30px #FFD700,
     0 0 50px #FFD700,
-    0 10px 30px rgba(0, 0, 0, 0.25); /* soft shadow for depth */
+    0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
-
-
+/* Envelope body */
 .envelope .body {
   width: 100%;
   height: 100%;
-  background: url('images/envelope.jpg');
+  background: url('images/envelope.jpg') no-repeat center center;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
+/* Flap */
 .envelope .flap {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 50%;
-  background: url('images/envelope1.jpg');
+  background: url('images/envelope1.jpg') no-repeat center center;
+  background-size: cover;
   clip-path: polygon(0 0, 50% 100%, 100% 0);
   z-index: 3;
   transform-origin: top center;
@@ -523,9 +525,10 @@ html {
 }
 
 .envelope.open .flap {
-  transform: rotateX(-160deg); /* flap opens */
+  transform: rotateX(-160deg);
 }
 
+/* Paper inside */
 .paper {
   position: absolute;
   top: 0;
@@ -534,7 +537,8 @@ html {
   height: 100%;
   padding: 30px;
   box-sizing: border-box;
-  background: url('images/papertexture.jpg');
+  background: url('images/papertexture.jpg') no-repeat center center;
+  background-size: cover;
   border: 2px solid #bfa14a;
   transform: translateY(100%);
   transition: transform 1s ease 0.8s;
@@ -546,12 +550,14 @@ html {
   transform: translateY(0);
 }
 
+
 .paper p {
   margin: 0;
   font-size: 1.5em;
   line-height: 1.6em;
   color: #333;
   white-space: pre-wrap;
+  
 }
 
 .polaroid {
