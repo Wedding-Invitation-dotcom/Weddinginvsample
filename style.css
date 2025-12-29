@@ -1,0 +1,875 @@
+/* Apply to body */
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background: #7793c2;
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.homepage-title {
+  font-family: 'Great Vibes', cursive; /* elegant script */
+  font-size: 10em;                      /* make it large */
+  color: whitesmoke;                          /* golden color */
+  text-align: center;
+  text-shadow:
+    0 0 5px gold,
+    0 0 10px gold,
+    0 0 15px gold,
+    0 0 20px gold;
+  
+  /* make it slightly animated */
+  animation: glowPulse 2s infinite alternate;
+}
+
+/* glowing pulse effect */
+@keyframes glowPulse {
+  0% {
+    text-shadow:
+      0 0 5px gold,
+      0 0 10px gold,
+      0 0 15px gold,
+      0 0 20px gold;
+  }
+  100% {
+    text-shadow:
+      0 0 10px gold,
+      0 0 20px gold,
+      0 0 30px gold,
+      0 0 40px gold;
+  }
+}
+
+/* Uniform H1 Style */
+h1 {
+  font-family: 'Great Vibes', cursive;  /* elegant cursive */
+  font-size: 3.5em;                     /* consistent large size */
+  font-weight: 400;                     /* keep it elegant, not too bold */
+  color: #FFD700;                       /* gold for elegance */
+  text-align: center;                   /* center all headings */
+  margin: 0.5em 0;                      /* uniform spacing */
+  letter-spacing: 1px;                  /* subtle spacing */
+  line-height: 1.2;                     /* tidy line height */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2); /* soft shadow for depth */
+  transition: all 0.3s ease;            /* smooth hover effect */
+}
+
+/* Optional subtle hover effect with golden glow */
+h1:hover {
+  color: #FFF176;                       /* slightly brighter gold on hover */
+  transform: scale(1.05);               /* gentle zoom */
+  text-shadow: 
+    0 0 5px #FFD700,   /* golden glow */
+    0 0 10px #FFD700,
+    0 0 15px #FFD700;
+}
+
+
+/* Uniform H2 Style */
+h2 {
+  font-family: 'Nunito', sans-serif;    /* uniform font */
+  font-size: 2em;                        /* slightly smaller than h1 */
+  font-weight: 600;                       /* slightly bold for emphasis */
+  color: #FFEB3B;                         /* soft gold color */
+  text-align: center;                     /* consistent alignment */
+  margin: 0.4em 0;                        /* spacing under headings */
+  letter-spacing: 0.5px;                  /* subtle spacing for readability */
+  line-height: 1.3;                       /* tidy line height */
+  text-shadow: 0.5px 0.5px 2px rgba(0,0,0,0.15); /* soft shadow for depth */
+  transition: all 0.3s ease;              /* smooth hover effect */
+}
+
+/* Optional hover effect */
+h2:hover {
+  color: #FFF176;                        /* subtle brighter gold on hover */
+  transform: scale(1.03);                /* gentle zoom */
+}
+
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.homepage-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(270deg, #5a86ad, #84a9d8, #aaccee, #5a86ad);
+  background-size: 800% 800%;
+  animation: gradientShift 120s ease infinite;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.slider-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;           /* twice width for seamless scroll */
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(200%);
+  height: 100%;
+  animation: scroll 120s linear infinite;
+}
+
+.slider-track img {
+  width: 500px;           /* adjust width */
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-content {
+  position: relative;
+  z-index: 1;            /* above the slider */
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Keyframes for scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+header.homepage {
+  display: grid;
+  justify-content: column;
+  align-items: center;          /* centers content horizontally & vertically */
+  min-height: 100vh;            /* full viewport height */
+  background: url('images/homepage.jpg') no-repeat center center;
+  background-size: cover;       /* makes image fill container */
+  color: #fff;                  /* text color for contrast */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ballet {
+  font-family: "Ballet", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+footer {
+  font-family: 'Great Vibes', cursive; /* elegant cursive for footer text */
+  font-size: 2em;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #79b3e9;
+
+  /* glow effect */
+  text-shadow: 
+    0 0 5px gold,
+    0 0 10px gold,
+    0 0 15px gold,
+    0 0 20px gold;
+}
+
+
+.hero {
+  padding: 100px 20px;
+  background: #5A86AD;
+  font-family: 'Garamond', serif;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+}
+
+.location {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.location img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.directions-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 28px;
+  background: #FFD700;
+  color: #333;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+/* Menu button */
+.menuBtn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-size: 30px;
+  color: gold;
+  text-shadow: 0 0 5px gold, 0 0 10px gold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menuBtn:hover {
+  text-shadow: 0 0 10px gold, 0 0 20px gold;
+  transform: scale(2);
+}
+
+
+/* Navbar */
+#rightNav {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Hide initially */
+  width: 250px;
+  height: 100vh; /* Make navbar full height */
+  background-color: #7793C2;
+  transition: right 0.5s ease;
+  z-index: 999;
+  font-size: 16px;
+  box-sizing: border-box; /* Prevent padding from affecting height */
+}
+
+/* Navbar links container */
+#rightNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack links vertically */
+  justify-content: flex-start;
+  align-items: stretch; /* Stretch links to take full width */
+  height: 100%;
+  margin-top: 0px; /* Adjust top margin to center links better */
+  background-color: #6b92b5;
+}
+
+/* Navbar list item */
+#rightNav li {
+  flex: 1; /* Each list item takes equal space */
+  display: flex;
+  justify-content: center; /* Center links horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+/* Navbar link style */
+#rightNav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px; /* Uniform padding */
+  font-size: 18px; /* Uniform font size */
+  width: 100%; /* Ensure links span the full width */
+  display: block; /* Block-level to fill width */
+  transition: all 0.3s ease; /* Smooth transition for all changes */
+  text-align: center; /* Center text in each link */
+  box-sizing: border-box; /* Prevent padding from affecting height */
+}
+
+/* Hover effect */
+#rightNav a:hover {
+  background-color: #95bbe3;  /* Light blue background on hover */
+  transform: scale(1.05);  /* Slight zoom effect on hover */
+  color: #FFD700;
+  text-shadow:
+    0 0 2px #ffd900e5,
+    0 0 5px #ffd900e5,;
+  animation: goldGlow 1.5s infinite alternate;
+  transform: scale(1.05);
+}
+
+@keyframes goldGlow {
+  0%, 100% {
+    text-shadow: 
+      0 0 5px #FFD700,
+      0 0 10px #FFD700,
+      0 0 15px #FFD700;
+  }
+  50% {
+    text-shadow: 
+      0 0 10px #FFD700,
+      0 0 20px #FFD700,
+      0 0 30px #FFD700;
+  }
+}
+
+/* Active state - when link is clicked */
+#rightNav a.active {
+  color: #F7EF8A;  /* Gold color */
+  font-weight: bold;  /* Bold text when active */
+  background-color: #95bbe3;  /* Light blue background when active */
+  transform: scale(1.05);  /* Slight zoom effect when active */
+}
+
+/* Show navbar */
+#rightNav.open {
+  right: 0; /* Show when active */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hidden using visibility (still takes up space if needed) */
+.hidden {
+  visibility: hidden;
+}
+
+#rsvp {
+  background-color: #7793c2;  /* light beige */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.rsvp-container {
+  width: 100%;
+  max-width: 700px; /* limit width */
+  margin: 0 auto;
+  border: 4px solid #FFD700;
+  border-radius: 16px;
+  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.7);
+  overflow: hidden; /* hide extra space if iframe is taller */
+}
+
+.rsvp-container iframe {
+  width: 100%;
+  height: 400px; /* adjust manually */
+  border: 0;
+}
+
+
+.timeline-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+}
+
+/* Timeline point container */
+.timeline-point {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Point style */
+.point {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: transparent;                 /* empty point initially */
+  -webkit-text-stroke: 1px red
+  ;     /* outline color */
+  display: inline-block;
+}
+
+.point:hover {
+  transform: scale(1.3);
+  color: red;                        /* filled color */
+  -webkit-text-stroke: 0;             /* remove outline when filled */
+  transform: scale(1.3); 
+}
+
+/* Info section (hidden by default) */
+.section {
+  position: absolute;
+  bottom: 100%;          /* position just above the point */
+  left: 50%;
+  transform: translateX(-50%) translateY(-10px); /* slight offset */
+  background: #9cb6ce;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  width: 220px;
+  text-align: center;
+  z-index: 10;
+}
+
+.section img {
+  margin-top: 8px;
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+  max-height: 150px;   /* optional limit */
+}
+
+/* Show section on hover */
+.timeline-point:hover .section {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-20px); /* moves slightly up for effect */
+  pointer-events: auto;
+}
+
+.wedding-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  perspective: 1000px;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Envelope */
+.envelope {
+  position: relative;
+  width: 60vw;
+  max-width: 900px;
+  height: 50vh;
+  max-height: 600px;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid #bfa14a;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* ADD THIS */
+}
+
+.envelope:hover {
+  transform: scale(1.08); /* slightly bigger zoom */
+  box-shadow: 
+    0 0 10px #fff176,
+    0 0 20px #FFD700,
+    0 0 30px #FFD700,
+    0 0 50px #FFD700,
+    0 10px 30px rgba(0, 0, 0, 0.25); /* soft shadow for depth */
+}
+
+
+
+.envelope .body {
+  width: 100%;
+  height: 100%;
+  background: url('images/envelope.jpg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.envelope .flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: url('images/envelope1.jpg');
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  z-index: 3;
+  transform-origin: top center;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #bfa14a;
+  backface-visibility: hidden;
+}
+
+.envelope.open .flap {
+  transform: rotateX(-160deg); /* flap opens */
+}
+
+.paper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  background: url('images/papertexture.jpg');
+  border: 2px solid #bfa14a;
+  transform: translateY(100%);
+  transition: transform 1s ease 0.8s;
+  z-index: 2;
+  overflow: auto;
+}
+
+.envelope.open .paper {
+  transform: translateY(0);
+}
+
+.paper p {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+.polaroid {
+  animation: fadeIn 10s forwards;
+  position: absolute;
+  width: 150px;
+  padding: 10px;
+  background: white;
+  border: 2px solid #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+/* Gradual fade-in delays and positions */
+.fade-delay1 { top: 5%; left: 5%; animation-delay: 5s; transform: rotate(-10deg);}
+.fade-delay2 { top: 15%; left: 60%; animation-delay: 7s; transform: rotate(8deg);}
+.fade-delay3 { top: 30%; left: 20%; animation-delay: 9s; transform: rotate(-5deg);}
+.fade-delay4 { top: 40%; left: 70%; animation-delay: 1.5s; transform: rotate(12deg);}
+.fade-delay5 { top: 55%; left: 10%; animation-delay: 5.5s; transform: rotate(-8deg);}
+.fade-delay6 { top: 60%; left: 50%; animation-delay: 8s; transform: rotate(5deg);}
+.fade-delay7 { top: 20%; left: 35%; animation-delay: 10s; transform: rotate(-12deg);}
+.fade-delay8 { top: 75%; left: 25%; animation-delay: 6.5s; transform: rotate(7deg);}
+.fade-delay9 { top: 10%; left: 80%; animation-delay: 9.5s; transform: rotate(-6deg);}
+.fade-delay10 { top: 65%; left: 75%; animation-delay: 10s; transform: rotate(10deg);}
+
+/* Fade in keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.polaroid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.polaroid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* behind content */
+}
+.collage-section {
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  height: 100vh;      /* full screen height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  text-align: center;      /* center text inside content */
+}
+
+.collage-content {
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  z-index: 1;               
+  max-width: 800px;
+  padding: 20px 40px;
+  background: rgba(123, 209, 255, 0.15); /* more translucent */
+  border-radius: 15px;
+  text-align: center;
+  color: rgb(255, 237, 135);                 /* text color for contrast */
+  backdrop-filter: blur(5px);  /* optional: adds frosted glass effect */
+}
+
+.venue-options {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center; /* centers the buttons horizontally */
+  flex-wrap: wrap;         /* optional: wrap on small screens */
+}
+
+
+.venue-options button {
+  padding: 12px 25px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: 2px solid #5a3e1b;  /* soft wedding tone border */
+  background-color: #ffd700;
+  color: #5a3e1b;
+  border-radius: 50px;          /* pill-shaped */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.venue-options button:hover {
+  background-color: #ffb700;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.7); /* gold glow */
+}
+
+.venue-options button.active {
+  background-color: #e6a37c; 
+  color: #fff;
+  border-color: #e6a37c;
+  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.7); /* gold glow */
+}
+
+.directions-btn,
+#directionsLink {
+  background: linear-gradient(135deg, #FFD700, #FFC107); /* golden gradient */
+  color: #1B3B5F; /* dusty blue text */
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(255, 215, 0, 0.5), 0 4px 10px rgba(122, 156, 198, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover: smooth zoom + slight color highlight */
+.directions-btn:hover,
+#directionsLink:hover {
+  background: #FFD233; /* slightly brighter golden on hover */
+  transform: scale(1.1); /* smooth zoom */
+  color: #1B3B5F; /* text remains dusty blue */
+  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.7); /* gold glow */
+}
+
+/* Panning effect */
+#mapFrame {
+  width: 100%; /* make iframe bigger than container */
+  height: 500px;
+  border: 0;
+  animation: panMap 60s linear infinite;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+/* Zoom effect on hover */
+#mapFrame:hover {
+  transform: scale(1.05); /* slight zoom */
+}
+
+.map-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* distance between map and button */
+  overflow: hidden; /* hide overflow during panning */
+  width: 90%; /* optional */
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 4px solid #FFD700; /* solid gold border */
+  border-radius: 15px;       /* rounded corners */
+  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.7); /* gold glow */
+  overflow: hidden;          /* clip iframe edges */
+}
+
+.map-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.masonry-gallery {
+  padding: 90px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.gallery-subtitle {
+  margin-bottom: 40px;
+  color: #777;
+}
+
+.masonry-grid {
+  column-count: 3;
+  column-gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.masonry-grid img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.masonry-grid img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .masonry-grid { column-count: 2; }
+}
+
+@media (max-width: 500px) {
+  .masonry-grid { column-count: 1; }
+}
+
+/* Lightbox */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#lightbox.show {
+  display: flex;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+#lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.masonry-grid img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.masonry-grid img.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floating-viewport {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.floating-track {
+  display: flex;
+  gap: 80px;
+  animation: floatGallery 120s linear infinite;
+}
+
+/* Masonry layout */
+.masonry {
+  column-count: 3;
+  column-gap: 24px;
+  min-width: 100vw; /* REQUIRED for movement */
+}
+
+.masonry img {
+  width: 100%;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  display: block;
+}
+
+/* Smooth continuous drift */
+@keyframes floatGallery {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .masonry { column-count: 2; }
+}
+
+@media (max-width: 500px) {
+  .masonry { column-count: 1; }
+}
+
+@media (max-width: 768px) {
+  .homepage-title { font-size: 5em; }
+  h1 { font-size: 2.5em; }
+  h2 { font-size: 1.5em; }
+}
+@media (max-width: 480px) {
+  .homepage-title { font-size: 3em; }
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.2em; }
+}
+
+@media (max-width: 500px) {
+  #rightNav { width: 100%; } /* full-screen nav on mobile */
+}
+
+@media (max-width: 600px) {
+  .hero { padding: 50px 10px; }
+  .envelope { width: 80vw; height: 40vh; }
+}
+
+@media (max-width: 500px) {
+  .venue-options button, .directions-btn { padding: 8px 16px; font-size: 14px; }
+}

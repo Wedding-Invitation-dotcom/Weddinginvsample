@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>#PhilMhailove</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Great+Vibes&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"></head>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtn = document.getElementById('menuBtn');
+  const rightNav = document.getElementById('rightNav');
+
+  // Show navbar and hide button
+  menuBtn.addEventListener('click', () => {
+    rightNav.classList.add('open');  // show nav
+    menuBtn.style.display = 'none';  // hide button while nav is open
+  });
+
+  // When any nav link is clicked → hide navbar and show button
+  document.querySelectorAll('#rightNav a').forEach(link => {
+    link.addEventListener('click', () => {
+      rightNav.classList.remove('open'); // hide nav
+      menuBtn.style.display = 'block';   // show button again
+    });
+  });
+});
+</script>
+
+
+<body>
+
+  
+<!--Homepage-->
+<section class="homepage-section" id="home">
+  <div class="slider-bg">
+    <div class="slider-track">
+      <img src="images/sampleimage.jpg" alt="">
+      <img src="images/img2.jpg" alt="">
+      <img src="images/img3.jpg" alt="">
+      <img src="images/img4.jpg" alt="">
+      <img src="images/img5.jpg" alt="">
+      
+      <!-- Repeat for seamless scroll -->
+      <img src="images/img1.jpg" alt="">
+      <img src="images/img2.jpg" alt="">
+      <img src="images/img3.jpg" alt="">
+      <img src="images/img4.jpg" alt="">
+      <img src="images/img5.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="section-content">
+    <h1 class="homepage-title">Philipp & Mhaila</h1>
+    <p>March 23, 2026 • 3:30 PM</p>
+  </div>
+</section>
+  
+<section class="wedding-message">
+  <h1>Wedding Message</h1>
+  <div class="envelope" id="envelope">
+    <div class="flap"></div>
+    <div class="body"></div>
+    <div class="paper">
+      <p id="message"></p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!--Our Story-->
+<section id="story" class="collage-section">
+  <div class="polaroid-bg">
+    <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay1">
+    <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay2">
+    <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay3">
+    <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay4">
+    <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay5">
+    <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay6">
+    <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay7">
+    <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay8">
+    <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay9">
+    <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay10">
+  </div>
+  <div class="collage-content">
+    <h1>Our Love Story</h1>
+    <p>In a modern world, our story began with a simple “Hi” and “Hello”. The first invitation arrived too soon; the second was shared over coffee at Starbucks Robertsons Plaza that led us now to forever.</p>
+  </div>
+</section>
+
+
+
+
+<section id="proposal">
+  <h1>The Proposal</h1>
+  <p> In a modern world, our story began with a simple “Hi” and “Hello”. The first invitation arrived too soon; the second was shared over coffee at Starbucks Robertsons Plaza that led us now to forever. </p>
+</section>
+
+
+<section id="relationship_timeline">
+  <h1>Relationship Timeline</h1>
+  <p></p>
+</section>
+
+<section class="timeline-horizontal">
+
+  <div class="timeline-point">
+    <span class="point">♡</span>
+    <div class="section">
+      <h3>First Meeting</h3>
+      <p>Where everything began.</p>
+      <img src="images/sampleimage.jpg" alt="First Meeting">
+
+    </div>
+  </div>
+
+  <div class="timeline-point">
+    <span class="point">♡</span>
+    <div class="section">
+      <h3>Fell in Love</h3>
+      <p>The relationship grew strong.</p>
+      <img src="images/sampleimage.jpg" alt="Fell in Love">
+    </div>
+  </div>
+
+  <div class="timeline-point">
+    <span class="point">♡</span>
+    <div class="section">
+      <h3>Engagement</h3>
+      <p>A promise for the future.</p>
+      <img src="images/sampleimage.jpg" alt="Engagement">
+    </div>
+  </div>
+
+  <div class="timeline-point">
+    <span class="point">♡</span>
+    <div class="section">
+      <h3>Wedding Planning</h3>
+      <p>Exciting preparations!</p>
+      <img src="images/sampleimage.jpg" alt="Wedding">
+    </div>
+  </div>
+
+  <div class="timeline-point">
+    <span class="point">♡</span>
+    <div class="section">
+      <h3>Married</h3>
+      <p>Very soon!</p>
+      <img src="images/sampleimage.jpg" alt="Married">
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<!--Event Details-->
+<section id="details">
+  <h1>Event Details</h1>
+
+
+  <h2>Ceremony</h2>
+
+
+  <h3>Venue</h3>
+  <h3>Address</h3>
+  <h3>Dress Code</h3>
+
+
+  <h2>Reception</h2>
+  <h3>Time</h3>
+  <h3>Venue</h3>
+  <h3>Food / Music info</h3>
+
+
+  <h2>Pre-Wedding Events</h2>
+  <p>Optional</p>
+</section>
+  <!--Venue and Directions-->
+<section id="venueanddirections">
+  <h1>Venue & Directions</h1>
+
+  <!-- Venue buttons -->
+  <div class="venue-options">
+    <button data-map="ceremony">Ceremony</button>
+    <button data-map="reception">Reception</button>
+    <button data-map="afterparty">After Party</button>
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const venues = {
+    ceremony: {
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.8670890879675!2d121.9202133748242!3d11.983697388248254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c6e29b63141%3A0xd79cb6b66c6b17f5!2sBelmont%20Hotel%20Boracay!5e0!3m2!1sen!2sph!4v1766949385862!5m2!1sen!2sph",
+      link: "https://www.google.com/maps/place/Belmont+Hotel+Boracay"
+    },
+    reception: {
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.372396184335!2d121.92952267482349!3d11.948698588280479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53fc103d5b093%3A0xd3da2e8243c6b5f1!2sSAMthing%20Guesthouse!5e0!3m2!1sen!2sph!4v1766949099706!5m2!1sen!2sph",
+      link: "https://www.google.com/maps/place/SAMthing+Guesthouse"
+    },
+    afterparty: {
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.8670890879675!2d121.9202133748242!3d11.983697388248254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c6e29b63141%3A0xd79cb6b66c6b17f5!2sBelmont%20Hotel%20Boracay!5e0!3m2!1sen!2sph!4v1766949385862!5m2!1sen!2sph",
+      link: "https://www.google.com/maps/place/Belmont+Hotel+Boracay"
+    }
+  };
+
+  const mapFrame = document.getElementById("mapFrame");
+  const directionsLink = document.getElementById("directionsLink");
+
+  document.querySelectorAll(".venue-options button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const venue = btn.dataset.map;
+      mapFrame.src = venues[venue].map;
+      directionsLink.href = venues[venue].link;
+    });
+  });
+
+  // default
+  mapFrame.src = venues.ceremony.map;
+  directionsLink.href = venues.ceremony.link;
+});
+</script>
+
+  <!-- Map -->
+<div class="map-wrapper">
+  <iframe
+    id="mapFrame"
+    src="https://www.google.com/maps/embed?pb=..."
+    allowfullscreen
+  ></iframe>
+</div>
+
+</section>
+
+<!--Accommodation & Travel-->
+<section id="accommodationandtravel">
+  <h1>Accommodation & Travel</h1>
+
+
+  <h2>Hotel Suggestions & Booking Links</h2>
+  <h2>Group Block Codes</h2>
+  <h2>Travel Tips</h2>
+</section>
+
+
+<!--Itinerary-->
+<section id="itinerary">
+  <h1>Itinerary</h1>
+
+
+  <h2>Events Timeline</h2>
+
+
+    <h2>Deadline</h2>
+    <p>January 30, 2025</p>
+    <h2>Dietary Restrictions</h2>
+</section>
+
+
+<!--Menu-->
+<section id="menu">
+  <h1>Menu</h1>
+
+
+  <h2>Food Options</h2>
+
+
+  <h2>Dietary Options</h2>
+
+
+  <h2>Drinks</h2>
+</section>
+
+
+<!--Gallery-->
+<section id="gallery" class="floating-gallery">
+  <h1>Gallery</h1>
+
+  <div class="floating-viewport">
+    <div class="floating-track">
+
+      <div class="masonry">
+        <img src="images/envelope.jpg">
+        <img src="images/mensbg.jpg">
+        <img src="images/womensbg.jpg">
+        <img src="images/envelope.jpg">
+        <img src="images/sampleimage.jpg">
+      </div>
+
+      <!-- duplicate for seamless movement -->
+      <div class="masonry">
+        <img src="images/sampleimage.jpg">
+        <img src="images/sampleimage.jpg">
+        <img src="images/sampleimage.jpg">
+        <img src="images/sampleimage.jpg">
+        <img src="images/sampleimage.jpg">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<script>
+document.querySelectorAll(".masonry img").forEach(img => {
+  const offset = Math.random() * 30 - 15;
+  img.style.transform = `translateY(${offset}px)`;
+});
+</script>
+
+
+
+
+
+
+
+
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span class="close">×</span>
+  <img id="lightboxImg">
+</div>
+
+
+
+<!--Wedding Party-->
+<section id="weddingparty">
+  <h1>Wedding Party</h1>
+  <h2>Names & Roles</h2>
+  <p>Short bios / Fun facts</p>
+  <h2>Photos</h2>
+</section>
+
+
+<!--Music & Entertainment-->
+<section id="entertainment">
+  <h1>Music & Entertainment</h1>
+  <h2>Band/DJ Info</h2>
+  <h2>Playlist Suggestions</h2>
+</section>
+
+
+<!--Guest Info & FAQs-->
+<section id="guestinfo">
+  <h1>Guest Info & FAQs</h1>
+  <h2>Dress Code</h2>
+  <h2>Kids Policy</h2>
+  <h2>Weather Notes</h2>
+  <h2>Accessibility Info</h2>
+  <h2>Health/Safety Notes</h2>
+</section>
+
+
+<!--Contact-->
+<section class= 'contact' id="contact">
+  <h1 class="contact">Contact Us</h1>
+  <h2>Phone Numbers</h2>
+  <p>09171074030 (Philipp)</p>
+  <p>09199134592 (Mhaila)</p>
+</section>
+
+
+<!--RSVP-->
+<section class="rsvp" id="rsvp">
+  <h1>RSVP</h1>
+<div class="rsvp-container">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdqAaUwgO0zSO30XMu9ok70XmQKiy4F2I6Gh0phKmjo7ClhEQ/viewform?embedded=true" width="640" height="821" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+</section>
+
+<!--Navigation-->
+<button class="menuBtn" onclick="openNav()" id="menuBtn">☰</button>
+
+
+<nav id="rightNav">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#story">Our Story</a></li>
+    <li><a href="#details">Event Details</a></li>
+    <li><a href="#venueanddirections">Venue & Directions</a></li>
+    <li><a href="#accommodationandtravel">Accommodation & Travel</a></li>
+    <li><a href="#itinerary">Itinerary</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#weddingparty">Wedding Party</a></li>
+    <li><a href="#entertainment">Music & Entertainment</a></li>
+    <li><a href="#guestinfo">Guest info & FAQs</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#rsvp">RSVP</a></li>
+  </ul>
+</nav>
+
+
+<script>
+function openNav() {
+  document.getElementById('rightNav').classList.add('open');  // show nav
+  document.getElementById('menuBtn').style.display = 'none';   // hide button
+}
+
+function closeNav() {
+  document.getElementById('rightNav').classList.remove('open'); // hide nav
+  document.getElementById('menuBtn').style.display = 'block';   // show button again
+}
+</script>
+
+
+
+<footer>
+  <p>With love, Philipp & Mhaila</p>
+</footer>
+
+
+
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeBtn = document.querySelector("#lightbox .close");
+
+document.querySelectorAll(".masonry-grid img").forEach(img => {
+  img.addEventListener("click", () => {
+    lightboxImg.src = img.src;
+    lightbox.classList.add("show");
+  });
+});
+
+closeBtn.addEventListener("click", () => {
+  lightbox.classList.remove("show");
+});
+
+lightbox.addEventListener("click", e => {
+  if (e.target === lightbox) {
+    lightbox.classList.remove("show");
+  }
+});
+</script>
+
+<script>
+const galleryImages = document.querySelectorAll(".masonry-grid img");
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+galleryImages.forEach(img => observer.observe(img));
+</script>
+
+
+
+
+</body>
+
+<!-- Place this script at the end of the body -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const envelope = document.getElementById('envelope');
+  const messageEl = document.getElementById('message');
+
+  const messageText = "Dear friends and family,\n\nWe are thrilled to share our love and joy with you. Join us as we celebrate our special day together!\n\nWith love, Philipp & Mhaila";
+
+  envelope.addEventListener('click', () => {
+    envelope.classList.add('open'); // open flap
+    messageEl.textContent = "";     // reset text
+
+    let i = 0;
+    function typeLetter() {
+      if (i < messageText.length) {
+        messageEl.textContent += messageText[i];
+        i++;
+        setTimeout(typeLetter, 50); // typing speed
+      }
+    }
+
+    typeLetter();
+  });
+});
+</script>
+
+</html>
