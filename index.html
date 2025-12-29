@@ -482,7 +482,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const messageText = "Dear friends and family,\n\nWe are thrilled to share our love and joy with you. Join us as we celebrate our special day together!\n\nWith love, Philipp & Mhaila";
 
+  let opened = false; // ✅ flag to prevent multiple triggers
+
   envelope.addEventListener('click', () => {
+    if (opened) return; // do nothing if already opened
+    opened = true;
+
     envelope.classList.add('open'); // open flap
     messageEl.textContent = "";     // reset text
 
@@ -499,5 +504,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
+
 
 </html>
