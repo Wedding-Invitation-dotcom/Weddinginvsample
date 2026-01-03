@@ -66,3 +66,9 @@ document.addEventListener('click', (e) => {
   }
 });
 
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    rightNav.classList.remove('open');
+    menuBtn.style.display = 'block';
+  }
+});
