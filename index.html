@@ -9,6 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Great+Vibes&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"></head>
+
+
+
+<body>
+
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.getElementById('menuBtn');
@@ -30,8 +35,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
+<!--Navigation-->
+<button class="menuBtn" id="menuBtn">☰</button>
 
-<body>
+
+<nav id="rightNav">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#story">Our Story</a></li>
+    <li><a href="#details">Event Details</a></li>
+    <li><a href="#venueanddirections">Venue & Directions</a></li>
+    <li><a href="#accommodationandtravel">Accommodation & Travel</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#guestinfo">Guest info & FAQs</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li><a href="#rsvp">RSVP</a></li>
+  </ul>
+</nav>
+
 
 <audio id="background-audio" autoplay loop muted>
   <source src="images/WebMusic.mp3" type="audio/mpeg">
@@ -60,34 +81,33 @@ document.addEventListener('click', () => {
 <section class="homepage-section" id="home">
   <div class="slider-bg">
     <div class="slider-track">
-      <img src="images/sampleimage.jpg" alt="">
-      <img src="images/img2.jpg" alt="">
-      <img src="images/img3.jpg" alt="">
-      <img src="images/img4.jpg" alt="">
-      <img src="images/img5.jpg" alt="">
+      <img src="images/homepageimage2.jpg" alt="">
+      <img src="images/homepageimage1.jpg" alt="">
+      <img src="images/homepageimage2.jpg" alt="">
+      <img src="images/homepageimage1.jpg" alt="">
+      <img src="images/homepageimage2.jpg" alt="">
       
       <!-- Repeat for seamless scroll -->
-      <img src="images/img1.jpg" alt="">
-      <img src="images/img2.jpg" alt="">
-      <img src="images/img3.jpg" alt="">
-      <img src="images/img4.jpg" alt="">
-      <img src="images/img5.jpg" alt="">
+      <img src="images/homepageimage2.jpg" alt="">
+      <img src="images/homepageimage1.jpg" alt="">
+      <img src="images/homepageimage2.jpg" alt="">
+      <img src="images/homepageimage1.jpg" alt="">
+      <img src="images/homepageimage2.jpg" alt="">
     </div>
   </div>
 
   <div class="section-content">
-    <h1 class="homepage-title">Philipp & Mhaila</h1>
-    <p>March 23, 2026 • 3:30 PM</p>
+  <img src="images/newpnm.png" alt="Wedding Hero" class="homepage-hero-image" width="100%" height="auto">
   </div>
 </section>
   
 <section class="wedding-message">
-  <h1>Wedding Message</h1>
+  <h1>Message</h1>
   <div class="envelope" id="envelope">
     <div class="flap"></div>
     <div class="body"></div>
     <div class="paper">
-      <p id="message"></p>
+    <img src="images/invcontent.jpg" alt="Surprise" class="paper-image">
     </div>
   </div>
 </section>
@@ -114,104 +134,138 @@ document.addEventListener('click', () => {
     <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay9">
     <img src="images/sampleimage.jpg" alt="" class="polaroid fade-delay10">
   </div>
-  <div class="collage-content">
-    <h1>Our Love Story</h1>
-    <p>In a modern world, our story began with a simple “Hi” and “Hello”. The first invitation arrived too soon; the second was shared over coffee at Starbucks Robertsons Plaza that led us now to forever.</p>
+ <div class="collage-overlay">
+
+    <div class="story-grid">
+
+      <div class="glass-inner story-box">
+        <h1>Our Love Story</h1>
+        <p>
+        In a modern world, our story began with a simple "Hi" and "Hello."</p>
+      <p>The first invitation arrived too soon; the second was shared over coffee at Starbucks, Robinsons Plaza—and that moment led us to forever.
+        </p>
+      </div>
+
+            <div class="glass-inner story-box">
+        <h1>The Proposal</h1>
+        <p>
+          On July 23, 2025, amidst the beautiful backdrop of Zambales, philippines, during their special event COMTRISAFAR 
+        </p>
+        <p>Philipp asked Mhaila to be his forever—and she said yes. 
+        </p>
+      </div>
+
+    </div>
+
   </div>
+
 </section>
 
+<section id="relationship_timeline" class="beach-timeline-section">
+  <div class="glass-inner timeline-glass">
+    <h1>Relationship Timeline</h1>
 
+<div class="beach-path">
 
-
-<section id="proposal">
-  <h1>The Proposal</h1>
-  <p> In a modern world, our story began with a simple “Hi” and “Hello”. The first invitation arrived too soon; the second was shared over coffee at Starbucks Robertsons Plaza that led us now to forever. </p>
-</section>
-
-
-<section id="relationship_timeline">
-  <h1>Relationship Timeline</h1>
-  <p></p>
-</section>
-
-<section class="timeline-horizontal">
-
-  <div class="timeline-point">
-    <span class="point">♡</span>
-    <div class="section">
+  <div class="path-item left">
+    <div class="path-card">
       <h3>First Meeting</h3>
       <p>Where everything began.</p>
-      <img src="images/sampleimage.jpg" alt="First Meeting">
-
+      <img src="images/sampleimage.jpg">
     </div>
+    <div class="path-dot">🐚</div>
   </div>
 
-  <div class="timeline-point">
-    <span class="point">♡</span>
-    <div class="section">
+  <div class="path-item right">
+    <div class="path-dot">👣</div>
+    <div class="path-card">
       <h3>Fell in Love</h3>
       <p>The relationship grew strong.</p>
-      <img src="images/sampleimage.jpg" alt="Fell in Love">
+      <img src="images/sampleimage.jpg">
     </div>
   </div>
 
-  <div class="timeline-point">
-    <span class="point">♡</span>
-    <div class="section">
+  <div class="path-item left">
+    <div class="path-card">
       <h3>Engagement</h3>
       <p>A promise for the future.</p>
-      <img src="images/sampleimage.jpg" alt="Engagement">
+      <img src="images/sampleimage.jpg">
     </div>
+    <div class="path-dot">💍</div>
   </div>
 
-  <div class="timeline-point">
-    <span class="point">♡</span>
-    <div class="section">
+  <div class="path-item right">
+    <div class="path-dot">🌊</div>
+    <div class="path-card">
       <h3>Wedding Planning</h3>
       <p>Exciting preparations!</p>
-      <img src="images/sampleimage.jpg" alt="Wedding">
+      <img src="images/sampleimage.jpg">
     </div>
   </div>
 
-  <div class="timeline-point">
-    <span class="point">♡</span>
-    <div class="section">
-      <h3>Married</h3>
+  <div class="path-item left">
+    <div class="path-dot">🌊</div>
+    <div class="path-card">
+      <h3>Wedding</h3>
       <p>Very soon!</p>
-      <img src="images/sampleimage.jpg" alt="Married">
+      <img src="images/sampleimage.jpg">
     </div>
   </div>
 
+</div>
+
+  </div>
 </section>
+
+
+
+
 
 
 
 
 <!--Event Details-->
 <section id="details">
+  <div class="glass-inner details-container">
+
   <h1>Event Details</h1>
 
+  <div class="event-cards">
 
-  <h2>Ceremony</h2>
+    <div class="event-card">
+      <h3>Guests Itinerary</h3>
 
+      <div class="event-reveal">
+        <img src="images/itinerary.jpg" alt="Ceremony venue">
+      </div>
+    </div>
 
-  <h3>Venue</h3>
-  <h3>Address</h3>
-  <h3>Dress Code</h3>
+    <div class="event-card">
+      <h3>Dress Code</h3>
 
+      <div class="event-reveal">
+        <img src="images/dresscode.jpg" alt="Dress code">
+      </div>
+    </div>
 
-  <h2>Reception</h2>
-  <h3>Time</h3>
-  <h3>Venue</h3>
-  <h3>Food / Music info</h3>
+    <div class="event-card">
+      <h3>Reception Menu</h3>
 
+      <div class="event-reveal">
+        <img src="images/foodmenu.jpg" alt="Menu">
+      </div>
+    </div>
 
-  <h2>Pre-Wedding Events</h2>
-  <p>Optional</p>
+  </div>
 </section>
+
+
   <!--Venue and Directions-->
+<div class="accom-container venue-container">
 <section id="venueanddirections">
   <h1>Venue & Directions</h1>
+
+    
 
   <!-- Venue buttons -->
   <div class="venue-options">
@@ -233,8 +287,8 @@ document.addEventListener("DOMContentLoaded", function () {
       link: "https://www.google.com/maps/place/SAMthing+Guesthouse"
     },
     afterparty: {
-      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.8670890879675!2d121.9202133748242!3d11.983697388248254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c6e29b63141%3A0xd79cb6b66c6b17f5!2sBelmont%20Hotel%20Boracay!5e0!3m2!1sen!2sph!4v1766949385862!5m2!1sen!2sph",
-      link: "https://www.google.com/maps/place/Belmont+Hotel+Boracay"
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.782062644936!2d121.93048943141102!3d11.959715411584321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c266b64077d%3A0xd13cc8993b1729fb!2sClub%20Galaxy!5e0!3m2!1sen!2sph!4v1767035937151!5m2!1sen!2sph",
+      link: "https://www.google.com/maps/place/Club+Galaxy+Boracay"
     }
   };
 
@@ -265,45 +319,64 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 
 </section>
-
+</div>
 <!--Accommodation & Travel-->
 <section id="accommodationandtravel">
-  <h1>Accommodation & Travel</h1>
+  <div class="accom-container">
+    <!-- Left side content -->
+    <div class="accom-left">
+      <h1>Accommodation & Travel</h1>
 
+      <h3>For your convenience, we have arranged a limited number of rooms for our invited guests. However, you are welcome to book your accommodation at any hotel of your choice through the hotel directly or via online travel platforms based on availability and pricing. </h3>
 
-  <h2>Hotel Suggestions & Booking Links</h2>
-  <h2>Group Block Codes</h2>
-  <h2>Travel Tips</h2>
+      <h2>Hotel Suggestions & Booking Links</h2>
+      <ul>
+        <h2><li><a href="#" data-url="https://www.belmonthotelboracay.com/">Belmont Hotel Boracay</a></li></h2>
+        <h2><li><a href="#" data-url="https://www.guestreservations.com/fairways-and-bluewater-newcoast-boracay-boracay/booking?utm_source=google&utm_medium=cpc&utm_campaign=990032393&gad_source=1&gad_campaignid=990032393&gbraid=0AAAAADiMQMbh4wHSY36d2S9G6QwYSOLbR&gclid=Cj0KCQiA6sjKBhCSARIsAJvYcpO0YlILnEaRB4tIk5Oo0GBLWVQe1-r2tj24opbom42uk_bGkj2Z4DwaAiCPEALw_wcB&ctTriggered=true">Fairways and Bluewater Boracay</a></li></h2>
+        <h2><li><a href="#" data-url="https://www.savoyhotelboracay.com.ph/en?utm_source=Affilired&utm_medium=affiliates&utm_campaign=global&_affclk=adn:3817::Cj0KCQiA6sjKBhCSARIsAJvYcpOt2_HtJOSIS4HbbpHw6NwxMVf8GWDNu_cGiSpgv0Z9cn2PodJLFlIaAqx2EALw_wcB:8002y1&gad_source=1">Savoy Hotel Boracay</a></li></h2>
+      </ul>
+
+      <h2>Travel Tips</h2>
+      <p>Parking, shuttle info, and travel tips for your guests.</p>
+    </div>
+
+    <!-- Right side iframe with glow wrapper -->
+    <div class="accom-right">
+      <div class="iframe-wrapper">
+        <iframe 
+          id="accom-iframe"
+          src="about:blank"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
 </section>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.accom-left a');
+    const iframe = document.getElementById('accom-iframe');
+
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();               // prevent default link behavior
+        const url = link.dataset.url;     // get URL from data-url
+        iframe.src = url;                 // update iframe
+      });
+    });
+  });
+</script>
 
 
 <!--Itinerary-->
-<section id="itinerary">
-  <h1>Itinerary</h1>
 
-
-  <h2>Events Timeline</h2>
-
-
-    <h2>Deadline</h2>
-    <p>January 30, 2025</p>
-    <h2>Dietary Restrictions</h2>
-</section>
 
 
 <!--Menu-->
-<section id="menu">
-  <h1>Menu</h1>
 
-
-  <h2>Food Options</h2>
-
-
-  <h2>Dietary Options</h2>
-
-
-  <h2>Drinks</h2>
-</section>
 
 
 <!--Gallery-->
@@ -363,40 +436,70 @@ document.querySelectorAll(".masonry img").forEach(img => {
 
 
 <!--Wedding Party-->
-<section id="weddingparty">
-  <h1>Wedding Party</h1>
-  <h2>Names & Roles</h2>
-  <p>Short bios / Fun facts</p>
-  <h2>Photos</h2>
-</section>
-
-
-<!--Music & Entertainment-->
-<section id="entertainment">
-  <h1>Music & Entertainment</h1>
-  <h2>Band/DJ Info</h2>
-  <h2>Playlist Suggestions</h2>
-</section>
-
 
 <!--Guest Info & FAQs-->
-<section id="guestinfo">
+<section id="guest-info-faq">
+  <div class="glass-inner">
+
   <h1>Guest Info & FAQs</h1>
-  <h2>Dress Code</h2>
-  <h2>Kids Policy</h2>
-  <h2>Weather Notes</h2>
-  <h2>Accessibility Info</h2>
-  <h2>Health/Safety Notes</h2>
+
+  <div class="cards-container">
+    <div class="card">
+      <h2>🏨 Free Accommodation</h2>
+      <p>The first 20 guests to reserve will enjoy complimentary accommodation at <a href="https://maps.app.goo.gl/9XaVNn7jWEWsXFQY6" target="_blank" rel="noopener noreferrer">The Orient Beach Boracay Hotel</a> or <a href="https://maps.app.goo.gl/TxYu6i7Wwf3ihZ687" target="_blank" rel="noopener noreferrer">SAMthing Special Guesthouse.</a></p>
+    </div>
+
+    <div class="card">
+      <h2>👗 Dress Code</h2>
+      <p>Beach casual attire is recommended. Light, breathable fabrics are perfect for Boracay weather.</p>
+    </div>
+
+    <div class="card">
+      <h2>👶 Kids Policy</h2>
+      <p>Children are warmly welcome! We've arranged fun activities and entertainment to keep the little ones happily engaged throughout the celebration.</p>
+    </div>
+
+    <div class="card">
+      <h2>🌤 Weather Notes</h2>
+      <p>Expect sunny days with occasional showers. Don’t forget your sunscreen!</p>
+    </div>
+
+    <div class="card">
+      <h2>♿ Accessibility Info</h2>
+      <p>The venue is wheelchair accessible and has ramps for easy entry.</p>
+    </div>
+
+    <div class="card">
+      <h2>❤️ Health/Safety Notes</h2>
+      <p>Hand sanitizers will be available throughout the venue. Your safety is our priority.</p>
+    </div>
+
+    <div class="card">
+      <h2>➕ Can I bring a plus-one?</h2>
+      <p>Yes, kindly indicate this in your <a href="#rsvp">RSVP</a>.</p>
+    </div>
+
+    <div class="card">
+      <h2>🚌 Is transportation provided from the hotel?</h2>
+      <p>No, but we recommend availing the HO-HO card from <a href="https://www.klook.com" target="_blank" rel="noopener noreferrer">KLOOK</a> for convenience.</p>
+    </div>
+  </div>
 </section>
+
+
 
 
 <!--Contact-->
-<section class= 'contact' id="contact">
-  <h1 class="contact">Contact Us</h1>
-  <h2>Phone Numbers</h2>
-  <p>09171074030 (Philipp)</p>
-  <p>09199134592 (Mhaila)</p>
+<section class="contact" id="contact">
+  <h1>Contact Us</h1>
+
+  <div class="contact-card">
+    <p><span>📞</span> Philipp — <a href="tel:09171074030">0917 107 4030</a></p>
+    <p><span>📞</span> Mhaila — <a href="tel:09199134592">0919 913 4592</a></p>
+  </div>
 </section>
+
+<!--Timer-->
 
 
 <!--RSVP-->
@@ -407,47 +510,39 @@ document.querySelectorAll(".masonry img").forEach(img => {
 
 </section>
 
-<!--Navigation-->
-<button class="menuBtn" onclick="openNav()" id="menuBtn">☰</button>
-
-
-<nav id="rightNav">
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#story">Our Story</a></li>
-    <li><a href="#details">Event Details</a></li>
-    <li><a href="#venueanddirections">Venue & Directions</a></li>
-    <li><a href="#accommodationandtravel">Accommodation & Travel</a></li>
-    <li><a href="#itinerary">Itinerary</a></li>
-    <li><a href="#menu">Menu</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#weddingparty">Wedding Party</a></li>
-    <li><a href="#entertainment">Music & Entertainment</a></li>
-    <li><a href="#guestinfo">Guest info & FAQs</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-    <li><a href="#rsvp">RSVP</a></li>
-  </ul>
-</nav>
-
-
-<script>
-function openNav() {
-  document.getElementById('rightNav').classList.add('open');  // show nav
-  document.getElementById('menuBtn').style.display = 'none';   // hide button
-}
-
-function closeNav() {
-  document.getElementById('rightNav').classList.remove('open'); // hide nav
-  document.getElementById('menuBtn').style.display = 'block';   // show button again
-}
-</script>
-
-
-
 <footer>
-  <p>With love, Philipp & Mhaila</p>
+ <div class="footer-countdown">
+    <span id="countdown-text">Loading countdown…</span>
+  </div>
+
+  <div class="footer-main">With love, Philipp & Mhaila</div>
+  <div class="footer-sub">By the sea • 2026</div>
 </footer>
 
+<script>
+const weddingDate = new Date("2026-03-23T16:00:00").getTime();
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = weddingDate - now;
+
+  if (distance < 0) {
+    document.getElementById("countdown-text").innerText =
+      "Just Married 🤍";
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((distance / (1000 * 60)) % 60);
+
+  document.getElementById("countdown-text").innerText =
+    `${days} days • ${hours} hrs • ${minutes} mins`;
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
 
 
 <script>
@@ -492,9 +587,8 @@ galleryImages.forEach(img => observer.observe(img));
 </script>
 
 
-
-
 </body>
+
 
 <!-- Place this script at the end of the body -->
 <script>
@@ -526,6 +620,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.event-card');
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      cards.forEach(c => c !== card && c.classList.remove('active'));
+      card.classList.toggle('active');
+    });
+  });
+});
+</script>
+
+
 
 
 </html>
