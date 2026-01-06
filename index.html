@@ -1,443 +1,212 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>#PhilMhailove</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Great+Vibes&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"></head>
+  <head>
+    <meta charset="UTF-8">
+    <title>#PhilMhailove</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Great+Vibes&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"></head>
 
 
 
-<body>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const menuBtn = document.getElementById('menuBtn');
-  const rightNav = document.getElementById('rightNav');
-
-  // Show navbar and hide button
-  menuBtn.addEventListener('click', () => {
-    rightNav.classList.add('open');  // show nav
-    menuBtn.style.display = 'none';  // hide button while nav is open
-  });
-
-  // When any nav link is clicked → hide navbar and show button
-  document.querySelectorAll('#rightNav a').forEach(link => {
-    link.addEventListener('click', () => {
-      rightNav.classList.remove('open'); // hide nav
-      menuBtn.style.display = 'block';   // show button again
-    });
-  });
-});
-</script>
-
-<!--Navigation-->
-<button class="menuBtn" id="menuBtn">☰</button>
-
-
-<nav id="rightNav">
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#story">Our Story</a></li>
-    <li><a href="#details">Event Details</a></li>
-    <li><a href="#venueanddirections">Venue & Directions</a></li>
-    <li><a href="#accommodationandtravel">Accommodation & Travel</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#guest-info-faq">Guest info & FAQs</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-    <li><a href="#rsvp">RSVP</a></li>
-  </ul>
-</nav>
-
-
-<audio id="background-audio" autoplay loop muted>
-  <source src="images/WebMusic.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-window.addEventListener('DOMContentLoaded', () => {
-  const audio = document.getElementById('background-audio');
-  // Try to play
-  audio.play().catch(() => {
-    console.log('Autoplay blocked, will play on first user interaction');
-  });
-});
-
-// Optional: unmute after first click anywhere on the page
-document.addEventListener('click', () => {
-  const audio = document.getElementById('background-audio');
-  audio.muted = false;
-  audio.play();
-}, { once: true });
-</script>
-
-
-  
-<!--Homepage-->
-<section class="homepage-section" id="home">
-  <div class="slider-bg">
-    <div class="slider-track">
-      <img src="images/blue.jpg" alt="">
-      <img src="images/blue.jpg" alt="">
-      <img src="images/blue.jpg" alt="">
-      <img src="images/hh4.jpg" alt="">
-      
-      <!-- Repeat for seamless scroll -->
-      <img src="images/hh1.jpg" alt="">
-      <img src="images/hh2.jpg" alt="">
-      <img src="images/hh3.jpg" alt="">
-      <img src="images/hh4.jpg" alt="">
-    </div>
-  </div>
-
-  <div class="section-content">
-  <img src="images/pm1.png" alt="Wedding Hero" class="homepage-hero-image" width="100%" height="auto">
-  </div>
-</section>
-  
-<section class="wedding-message">
-  <h1 class="homep" style="margin-bottom: 100px">Welcome Aboard to Philipp & Mhaila’s Destination Wedding! ✈︎</h1>
-
-  
-  <h2>We’re so excited to celebrate our special day with you in the beautiful paradise of Boracay!</h2>
-  <h2 style="margin-bottom: 100px">Before you take off on this unforgettable journey with us, please <span class="highlight">click the envelope below</span> to begin your adventure. Get ready for sun, sand, love, and memories that will last a lifetime.</h2>
-
-  <div class="envelope" id="envelope">
-    <div class="flap"></div>
-    <div class="body"></div>
-    <div class="paper">
-    <img src="images/envcontent.png" alt="Surprise" class="paper-image">
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-<!--Our Story-->
-<section id="story" class="collage-section">
- <div class="collage-overlay">
-
-    <div class="story-grid">
-
-      <div class="glass-inner story-box">
-        <h1>Our Love Story</h1>
-        <p>
-        In a modern world, our story began with a simple "Hi" and "Hello."</p>
-      <p>The first invitation arrived too soon; the second was shared over coffee <br>at <span class="highlight">Starbucks, Robertson Plaza</span>—and that moment led us to forever.
-        </p>
-      </div>
-
-            <div class="glass-inner story-box">
-        <h1>The Proposal</h1>
-        <p>
-          On <span class="highlight"> July 23, 2025</span>, amidst the beautiful backdrop of <span class="highlight">Zambales, Philippines</span>, <br>during their special event COMTRISAFAR; 
-        </p>
-        <p>Philipp asked Mhaila to be his forever—and she said <span class="highlight">yes</span>. 
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section id="relationship_timeline" class="beach-timeline-section">
-  <div class="glass-inner timeline-glass">
-    <h1>Relationship Timeline</h1>
-
-<div class="beach-path">
-
-  <div class="path-item left">
-    <div class="path-card">
-      <h3>DEPARTURE</h3>
-      <p>📍 September 21, 2021 <br>Where everything began 🤍</p>
-      <img src="images/11.jpg">
-    </div>
-    <div class="path-dot">🐚</div>
-  </div>
-
-  <div class="path-item right">
-    <div class="path-dot">👣</div>
-    <div class="path-card">
-      <h3>FLIGHT TIME</h3>
-      <p>⏳ Almost 4 years in the making<br>Love, growth, and choosing each other</p>
-      <img src="images/22.jpg">
-    </div>
-  </div>
-
-  <div class="path-item left">
-    <div class="path-card">
-      <h3>MILESTONE</h3>
-      <p>💍 July 23, 2025<br>Engaged — forever said yes!</p>
-      <img src="images/eng.jpg">
-    </div>
-    <div class="path-dot">💍</div>
-  </div>
-
-  <div class="path-item right">
-    <div class="path-dot">🗓️</div>
-    <div class="path-card">
-      <h3>IN-FLIGHT PHASE</h3>
-      <p>📝 Wedding planning & bridal fair</p>
-      <img src="images/44.jpg">
-    </div>
-  </div>
-
-  <div class="path-item left">
-    <div class="path-dot">🕊️</div>
-    <div class="path-card">
-      <h3>FINAL DESTINATION</h3>
-      <p>🏝 March 23, 2026<br>Our wedding day — a trip of a lifetime ✨</p>
-      <img src="images/55.jpg">
-    </div>
-  </div>
-
-</div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-<!--Event Details-->
-<section id="details">
-  <div class="glass-inner details-container">
-
-  <h1>Event Details</h1>
-
-  <div class="event-cards">
-
-    <div class="event-card">
-      <h2>Ceremony & Reception</h2>
-
-      <div class="event-reveal">
-        <img src="images/candm.png" alt="Ceremony venue">
-      </div>
-    </div>
-
-    <div class="event-card">
-      <h2>Reception Menu</h2>
-
-      <div class="event-reveal">
-        <img src="images/foodmenu.jpg" alt="Menu">
-        <img src="images/menu2.png" alt="Menu">
-      </div>
-    </div>
-
-    <div class="event-card" id="dcode">
-      <h2>Dress Code</h2>
-
-      <div class="event-reveal">
-        <img src="images/dcode.png" alt="Dress code">
-        <img src="images/wtw.png" alt="Dress code">
-      </div>
-    </div>
-
-    <div class="event-card">
-      <h2>Guests Itinerary</h2>
-
-      <div class="event-reveal">
-        <img src="images/itinerary.png" alt="Ceremony venue">
-      </div>
-    </div>
-
-
-  </div>
-</section>
-
-
-  <!--Venue and Directions-->
-<div class="accom-container venue-container">
-<section id="venueanddirections">
-  <h1>Venue & Directions</h1>
-
-    
-
-  <!-- Venue buttons -->
-  <div class="venue-options">
-    <button data-map="ceremony">Ceremony</button>
-    <button data-map="reception">Reception</button>
-    <button data-map="afterparty">After Party</button>
-  </div>
+  <body>
 
   <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const venues = {
-    ceremony: {
-      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10036.472699844799!2d121.91650682226978!3d11.983711402966962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53d66c72e7d63%3A0xfa3b9b75a35aeb23!2sBoracay%20Newcoast%20Cove%202%20Beach!5e0!3m2!1sen!2sph!4v1767534105611!5m2!1sen!2sph",
-      link: "https://maps.app.goo.gl/o7uHKAb1QpCqXZkd9"
-    },
-    reception: {
-      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.8670890879675!2d121.9202133748242!3d11.983697388248254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c6e29b63141%3A0xd79cb6b66c6b17f5!2sBelmont%20Hotel%20Boracay!5e0!3m2!1sen!2sph!4v1766949385862!5m2!1sen!2sph",
-      link: "https://www.google.com/maps/place/Belmont+Hotel+Boracay"
-    },
-    afterparty: {
-      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.782062644936!2d121.93048943141102!3d11.959715411584321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c266b64077d%3A0xd13cc8993b1729fb!2sClub%20Galaxy!5e0!3m2!1sen!2sph!4v1767035937151!5m2!1sen!2sph",
-      link: "https://www.google.com/maps/place/Club+Galaxy+Boracay"
-    }
-  };
-
-  const mapFrame = document.getElementById("mapFrame");
-  const directionsLink = document.getElementById("directionsLink");
-
-  document.querySelectorAll(".venue-options button").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const venue = btn.dataset.map;
-      mapFrame.src = venues[venue].map;
-      directionsLink.href = venues[venue].link;
-    });
-  });
-
-  // default
-  mapFrame.src = venues.ceremony.map;
-  directionsLink.href = venues.ceremony.link;
-});
-</script>
-
-  <!-- Map -->
-<div class="map-wrapper">
-  <iframe
-    id="mapFrame"
-    src="https://www.google.com/maps/embed?pb=..."
-    allowfullscreen
-  ></iframe>
-</div>
-
-</section>
-</div>
-<!--Accommodation & Travel-->
-<section id="accommodationandtravel" id="dcode">
-  <div class="accom-container">
-    <!-- Left side content -->
-    <div class="accom-left">
-      <h1>Accommodation & Travel</h1>
-
-      <h3>For your convenience, we have arranged a limited number of rooms for our invited guests. However, you are welcome to book your accommodation at any hotel of your choice through the hotel directly or via online travel platforms based on availability and pricing. </h3>
-      <br>
-      <h2>Free Hotel Accommodation</h2>
-      <ul>
-        <h2><li><a href="#" data-url="https://www.orientbeach.ph/">The Orient Beach Boracay</a></li></h2>
-        <h2><li><a href="#" data-url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.372396015374!2d121.93209759999998!3d11.948698600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53fc103d5b093%3A0xd3da2e8243c6b5f1!2sSAMthing%20Guesthouse!5e0!3m2!1sen!2sph!4v1767536557363!5m2!1sen!2sph">SAMthing Guesthouse</a></li></h2>
-      </ul>
-
-      <h2>Hotel Suggestions & Booking Links</h2>
-      <ul>
-        <h2><li><a href="#" data-url="https://www.belmonthotelboracay.com/">Belmont Hotel Boracay</a></li></h2>
-        <h2><li><a href="#" data-url="https://www.guestreservations.com/fairways-and-bluewater-newcoast-boracay-boracay/booking?utm_source=google&utm_medium=cpc&utm_campaign=990032393&gad_source=1&gad_campaignid=990032393&gbraid=0AAAAADiMQMbh4wHSY36d2S9G6QwYSOLbR&gclid=Cj0KCQiA6sjKBhCSARIsAJvYcpO0YlILnEaRB4tIk5Oo0GBLWVQe1-r2tj24opbom42uk_bGkj2Z4DwaAiCPEALw_wcB&ctTriggered=true">Fairways and Bluewater Boracay</a></li></h2>
-        <h2><li><a href="#" data-url="https://www.savoyhotelboracay.com.ph/en">Savoy Hotel Boracay</a></li></h2>
-      </ul>
-
-    <div class="event-cards">
-    <div class="event-card">
-      <h2>Travel Tips</h2>
-
-      <div class="event-reveal">
-        <img src="images/ttips.png" alt="Ceremony venue">
-      </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- Right side iframe with glow wrapper -->
-    <div class="accom-right">
-      <div class="iframe-wrapper">
-        <iframe 
-          id="accom-iframe"
-          src="about:blank"
-          frameborder="0"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
   document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('.accom-left a');
-    const iframe = document.getElementById('accom-iframe');
+    const menuBtn = document.getElementById('menuBtn');
+    const rightNav = document.getElementById('rightNav');
 
-    links.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();               // prevent default link behavior
-        const url = link.dataset.url;     // get URL from data-url
-        iframe.src = url;                 // update iframe
+    // Show navbar and hide button
+    menuBtn.addEventListener('click', () => {
+      rightNav.classList.add('open');  // show nav
+      menuBtn.style.display = 'none';  // hide button while nav is open
+    });
+
+    // When any nav link is clicked → hide navbar and show button
+    document.querySelectorAll('#rightNav a').forEach(link => {
+      link.addEventListener('click', () => {
+        rightNav.classList.remove('open'); // hide nav
+        menuBtn.style.display = 'block';   // show button again
       });
     });
   });
-</script>
+  </script>
+
+  <!--Navigation-->
+  <button class="menuBtn" id="menuBtn">☰</button>
 
 
-<!--Itinerary-->
+  <nav id="rightNav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#details">Event Details</a></li>
+      <li><a href="#venueanddirections">Venue & Directions</a></li>
+      <li><a href="#accommodationandtravel">Accommodation & Travel</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#guest-info-faq">Guest info & FAQs</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+    </ul>
+  </nav>
 
 
+  <audio id="background-audio" autoplay loop muted>
+    <source src="images/WebMusic.mp3" type="audio/mpeg">
+  </audio>
 
-<!--Menu-->
+  <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('background-audio');
+    // Try to play
+    audio.play().catch(() => {
+      console.log('Autoplay blocked, will play on first user interaction');
+    });
+  });
+
+  // Optional: unmute after first click anywhere on the page
+  document.addEventListener('click', () => {
+    const audio = document.getElementById('background-audio');
+    audio.muted = false;
+    audio.play();
+  }, { once: true });
+  </script>
 
 
-
-<!--Gallery-->
-  <h1>Gallery</h1>
-<section id="gallery" class="floating-gallery">
-
-  <div class="floating-track">
-
-    <!-- set 1 -->
-    <div class="gallery-set">
-      <img src="gallery/1.jpg">
-      <img src="gallery/2.jpg">
-      <img src="gallery/3.jpg">
-      <img src="gallery/4.jpg">
-      <img src="gallery/5.jpg">
-      <img src="gallery/6.jpg">
+    
+  <!--Homepage-->
+  <section class="homepage-section" id="home">
+    <div class="slider-bg">
+      <div class="slider-track">
+        <img src="images/blue.jpg" alt="">
+        <img src="images/blue.jpg" alt="">
+        <img src="images/blue.jpg" alt="">
+        <img src="images/hh4.jpg" alt="">
+        
+        <!-- Repeat for seamless scroll -->
+        <img src="images/hh1.jpg" alt="">
+        <img src="images/hh2.jpg" alt="">
+        <img src="images/hh3.jpg" alt="">
+        <img src="images/hh4.jpg" alt="">
+      </div>
     </div>
 
-    <!-- set 2 (duplicate) -->
-    <div class="gallery-set">
-      <img src="gallery/7.jpg">
-      <img src="gallery/8.jpg">
-      <img src="gallery/9.jpg">
-      <img src="images/g4.jpg">
-      <img src="images/hh4.jpg">
+    <div class="section-content">
+    <img src="images/pm1.png" alt="Wedding Hero" class="homepage-hero-image" width="100%" height="auto">
+    </div>
+  </section>
+    
+  <section class="wedding-message">
+    <h1 class="homep" style="margin-bottom: 100px">Welcome Aboard to Philipp & Mhaila’s Destination Wedding! ✈︎</h1>
+
+    
+    <h2>We’re so excited to celebrate our special day with you in the beautiful paradise of Boracay!</h2>
+    <h2 style="margin-bottom: 100px">Before you take off on this unforgettable journey with us, please <span class="highlight">click the envelope below</span> to begin your adventure. Get ready for sun, sand, love, and memories that will last a lifetime.</h2>
+
+    <div class="envelope" id="envelope">
+      <div class="flap"></div>
+      <div class="body"></div>
+      <div class="paper">
+      <img src="images/envcontent.png" alt="Surprise" class="paper-image">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!--Our Story-->
+  <section id="story" class="collage-section">
+  <div class="collage-overlay">
+
+      <div class="story-grid">
+
+        <div class="glass-inner story-box">
+          <h1>Our Love Story</h1>
+          <p>
+          In a modern world, our story began with a simple "Hi" and "Hello."</p>
+        <p>The first invitation arrived too soon; the second was shared over coffee <br>at <span class="highlight">Starbucks, Robertson Plaza</span>—and that moment led us to forever.
+          </p>
+        </div>
+
+              <div class="glass-inner story-box">
+          <h1>The Proposal</h1>
+          <p>
+            On <span class="highlight"> July 23, 2025</span>, amidst the beautiful backdrop of <span class="highlight">Zambales, Philippines</span>, <br>during their special event COMTRISAFAR; 
+          </p>
+          <p>Philipp asked Mhaila to be his forever—and she said <span class="highlight">yes</span>. 
+          </p>
+        </div>
+
+      </div>
+
     </div>
 
-    <!-- set 3 -->
-    <div class="gallery-set">
-      <img src="images/g1.jpg">
-      <img src="images/g2.jpg">
-      <img src="images/g3.jpg">
-      <img src="images/g4.jpg">
-      <img src="images/g5.jpg">
+  </section>
+
+  <section id="relationship_timeline" class="beach-timeline-section">
+    <div class="glass-inner timeline-glass">
+      <h1>Relationship Timeline</h1>
+
+  <div class="beach-path">
+
+    <div class="path-item left">
+      <div class="path-card">
+        <h3>DEPARTURE</h3>
+        <p>📍 September 22, 2021 <br>Where everything began 🤍</p>
+        <img src="images/11.jpg">
+      </div>
+      <div class="path-dot">🐚</div>
+    </div>
+
+    <div class="path-item right">
+      <div class="path-dot">👣</div>
+      <div class="path-card">
+        <h3>FLIGHT TIME</h3>
+        <p>⏳ Almost 4 years in the making<br>Love, growth, and choosing each other</p>
+        <img src="images/22.jpg">
+      </div>
+    </div>
+
+    <div class="path-item left">
+      <div class="path-card">
+        <h3>MILESTONE</h3>
+        <p>💍 July 23, 2025<br>Engaged — forever said yes!</p>
+        <img src="images/eng.jpg">
+      </div>
+      <div class="path-dot">💍</div>
+    </div>
+
+    <div class="path-item right">
+      <div class="path-dot">🗓️</div>
+      <div class="path-card">
+        <h3>IN-FLIGHT PHASE</h3>
+        <p>📝 Wedding planning & bridal fair</p>
+        <img src="images/44.jpg">
+      </div>
+    </div>
+
+    <div class="path-item left">
+      <div class="path-dot">🕊️</div>
+      <div class="path-card">
+        <h3>FINAL DESTINATION</h3>
+        <p>🏝 March 23, 2026<br>Our wedding day — a trip of a lifetime ✨</p>
+        <img src="images/55.jpg">
+      </div>
     </div>
 
   </div>
 
-</section>
-
-
-<script>
-document.querySelectorAll(".gallery-set img").forEach(img => {
-  const offset = Math.random() * 30 - 15;
-  img.style.transform = `translateY(${offset}px)`;
-});
-</script>
+    </div>
+  </section>
 
 
 
@@ -446,304 +215,535 @@ document.querySelectorAll(".gallery-set img").forEach(img => {
 
 
 
+  <!--Event Details-->
+  <section id="details">
+    <div class="glass-inner details-container">
 
-<!-- Lightbox -->
-<div id="lightbox">
-  <span class="close">×</span>
-  <img id="lightboxImg">
-</div>
+    <h1>Event Details</h1>
+
+    <div class="event-cards">
+
+      <div class="event-card">
+        <h2>Ceremony & Reception</h2>
+
+        <div class="event-reveal">
+          <img src="images/candm.png" alt="Ceremony venue">
+        </div>
+      </div>
+
+      <div class="event-card">
+        <h2>Reception Menu</h2>
+
+        <div class="event-reveal">
+          <img src="images/foodmenu.jpg" alt="Menu">
+          <img src="images/menu2.png" alt="Menu">
+        </div>
+      </div>
+
+      <div class="event-card" id="dcode">
+        <h2>Dress Code</h2>
+
+        <div class="event-reveal">
+          <img src="images/dcode.png" alt="Dress code">
+          <img src="images/wtw.png" alt="Dress code">
+        </div>
+      </div>
+
+      <div class="event-card">
+        <h2>Guests Itinerary</h2>
+
+        <div class="event-reveal">
+          <img src="images/itinerary.png" alt="Ceremony venue">
+        </div>
+      </div>
 
 
+    </div>
+  </section>
 
-<!--Wedding Party-->
 
-<!--Guest Info & FAQs-->
-<section id="guest-info-faq">
-  <div class="glass-inner">
+    <!--Venue and Directions-->
+  <div class="accom-container venue-container">
+  <section id="venueanddirections">
+    <h1>Venue & Directions</h1>
 
-  <h1>Guest Info & FAQs</h1>
+      
 
-  <div class="cards-container">
-
-    <div class="card">
-      <h2>⛪ Wedding Venue</h2>
-      <p>The ceremony will be held at Boracay Newcoast Beach, Boracay Island Aklan, Philippines. 
-
-The reception will follow at Belmont Hotel Boracay Beachfront.</p>
+    <!-- Venue buttons -->
+    <div class="venue-options">
+      <button data-map="ceremony">Ceremony</button>
+      <button data-map="reception">Reception</button>
+      <button data-map="afterparty">After Party</button>
     </div>
 
-    <div class="card">
-      <h2>🏨 Free Accommodation</h2>
-      <p>The first 20 guests to reserve will enjoy complimentary accommodation at <a href="#accommodationandtravel">click here</a></p>
-    </div>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
 
-    <div class="card">
-      <h2>🎟️ Air Fare and Land Transportaion</h2>
-      <p>Kindly note that the airfare is not provided. Guests may arrange their own flights based on their preferred schedule.</p>    
-    </div>
+    const venues = {
+      ceremony: {
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10036.472699844799!2d121.91650682226978!3d11.983711402966962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53d66c72e7d63%3A0xfa3b9b75a35aeb23!2sBoracay%20Newcoast%20Cove%202%20Beach!5e0!3m2!1sen!2sph!4v1767534105611!5m2!1sen!2sph",
+        link: "https://maps.app.goo.gl/o7uHKAb1QpCqXZkd9"
+      },
+      reception: {
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.8670890879675!2d121.9202133748242!3d11.983697388248254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c6e29b63141%3A0xd79cb6b66c6b17f5!2sBelmont%20Hotel%20Boracay!5e0!3m2!1sen!2sph!4v1766949385862!5m2!1sen!2sph",
+        link: "https://www.google.com/maps/place/Belmont+Hotel+Boracay"
+      },
+      afterparty: {
+        map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.782062644936!2d121.93048943141102!3d11.959715411584321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c266b64077d%3A0xd13cc8993b1729fb!2sClub%20Galaxy!5e0!3m2!1sen!2sph!4v1767035937151!5m2!1sen!2sph",
+        link: "https://www.google.com/maps/place/Club+Galaxy+Boracay"
+      }
+    };
 
-    <div class="card">
-      <h2>👗 Dress Code</h2>
-      <p>To keep things simple and comfortable, guests are kindly requested to prepare their own attire. A "<a href="#details">What to Wear</a>" guide has been shared to help you coordinate with our wedding theme.</p>
-    </div>
+    const mapFrame = document.getElementById("mapFrame");
+    const directionsLink = document.getElementById("directionsLink");
 
-    <div class="card">
-      <h2>📝 RSVP</h2>
-      <p><a href="#rsvp">RSVP</a> is strictly required. Kindly confirm your attendance including your companion(if any) on or before February 20, 2026.</p>
-    </div>
+    document.querySelectorAll(".venue-options button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const venue = btn.dataset.map;
+        mapFrame.src = venues[venue].map;
+        directionsLink.href = venues[venue].link;
+      });
+    });
 
-    <div class="card">
-      <h2>👶 Kids Policy</h2>
-      <p>Children are warmly welcome! We've arranged fun activities and entertainment to keep the little ones happily engaged throughout the celebration.</p>
-    </div>
+    // default
+    mapFrame.src = venues.ceremony.map;
+    directionsLink.href = venues.ceremony.link;
+  });
+  </script>
 
-    <div class="card">
-      <h2>👨🏻‍👩🏻‍👦🏻‍👦🏻 Guests Itinerary</h2>
-      <p>Guests are not required to follow the itinerary. The itinerary is provided as a guide only. Guests are free to enjoy Boracay Island and plan their activities at their own pace.</p>
-    </div>
-
-    <div class="card">
-      <h2>🌤 Weather Notes</h2>
-      <p>Expect sunny days with occasional showers. Don’t forget your sunscreen!</p>
-    </div>
-
-    <div class="card">
-      <h2>📸 Local Photographer</h2>
-      <p>Guests are welcome to approach the local photographer we've hired for photos.
-          There is no fee, and pictures may be taken using your personal mobile phone.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>🎞️ Share the Memories</h2>
-      <p>May we kindly request to upload or share your photos using the QR code provided.</p>
-    </div>
-
+    <!-- Map -->
+  <div class="map-wrapper">
+    <iframe
+      id="mapFrame"
+      src="https://www.google.com/maps/embed?pb=..."
+      allowfullscreen
+    ></iframe>
   </div>
-</section>
 
-
-
-
-<!--Contact-->
-<section class="contact" id="contact">
-  <h1>Contact Us</h1>
-
-  <div class="contact-card">
-    <p><span>📞</span> Philipp — <a href="tel:09171074030">0917 107 4030</a></p>
-    <p><span>📞</span> Mhaila — <a href="tel:09199134592">0919 913 4592</a></p>
+  </section>
   </div>
-</section>
+  <!--Accommodation & Travel-->
+  <section id="accommodationandtravel" id="dcode">
+    <div class="accom-container">
+      <!-- Left side content -->
+      <div class="accom-left">
+        <h1>Accommodation & Travel</h1>
 
-<!--Timer-->
+        <h3>For your convenience, we have arranged a limited number of rooms for our invited guests. However, you are welcome to book your accommodation at any hotel of your choice through the hotel directly or via online travel platforms based on availability and pricing. </h3>
+        <br>
+        <h2>Free Hotel Accommodation</h2>
+        <ul>
+          <h2><li><a href="#" data-url="https://www.orientbeach.ph/">The Orient Beach Boracay</a></li></h2>
+          <h2><li><a href="#" data-url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.372396015374!2d121.93209759999998!3d11.948698600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53fc103d5b093%3A0xd3da2e8243c6b5f1!2sSAMthing%20Guesthouse!5e0!3m2!1sen!2sph!4v1767536557363!5m2!1sen!2sph">SAMthing Guesthouse</a></li></h2>
+        </ul>
+
+        <h2>Hotel Suggestions & Booking Links</h2>
+        <ul>
+          <h2><li><a href="#" data-url="https://www.belmonthotelboracay.com/">Belmont Hotel Boracay</a></li></h2>
+          <h2><li><a href="#" data-url="https://www.guestreservations.com/fairways-and-bluewater-newcoast-boracay-boracay/booking?utm_source=google&utm_medium=cpc&utm_campaign=990032393&gad_source=1&gad_campaignid=990032393&gbraid=0AAAAADiMQMbh4wHSY36d2S9G6QwYSOLbR&gclid=Cj0KCQiA6sjKBhCSARIsAJvYcpO0YlILnEaRB4tIk5Oo0GBLWVQe1-r2tj24opbom42uk_bGkj2Z4DwaAiCPEALw_wcB&ctTriggered=true">Fairways and Bluewater Boracay</a></li></h2>
+          <h2><li><a href="#" data-url="https://www.savoyhotelboracay.com.ph/en">Savoy Hotel Boracay</a></li></h2>
+        </ul>
+
+      <div class="event-cards">
+      <div class="event-card">
+        <h2>Travel Tips</h2>
+
+        <div class="event-reveal">
+          <img src="images/ttips.png" alt="Ceremony venue">
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- Right side iframe with glow wrapper -->
+      <div class="accom-right">
+        <div class="iframe-wrapper">
+          <iframe 
+            id="accom-iframe"
+            src="about:blank"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const links = document.querySelectorAll('.accom-left a');
+      const iframe = document.getElementById('accom-iframe');
+
+      links.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();               // prevent default link behavior
+          const url = link.dataset.url;     // get URL from data-url
+          iframe.src = url;                 // update iframe
+        });
+      });
+    });
+  </script>
 
 
-<!--RSVP-->
-<section class="rsvp" id="rsvp">
-  <h1>RSVP</h1>
-  <p>May we kindly request <span class="highlight">confirmation of attendance</span> on or before <span class="highlight">February 20, 2026</span>.</p>
-<div class="rsvp-container">
-  <a
-    href="https://docs.google.com/forms/d/e/1FAIpQLScUJchKO5QdyL1hWAA9Oe_3NnZysNoIpO9RNPp7w94DgLKUBA/viewform?usp=header"
-    target="_blank"
-    class="rsvp-button">
-    Open RSVP Form
-  </a>
-</section>
+  <!--Itinerary-->
 
-<footer>
-<div class="flip-countdown">
-  <div class="flip-card"><span id="flip-days">00</span></div>
-  <div class="flip-card"><span id="flip-hours">00</span></div>
-  <div class="flip-card"><span id="flip-minutes">00</span></div>
-  <div class="flip-card"><span id="flip-seconds">00</span></div>
-</div>
-<br>
-<br>
 
-  <div class="footer-main">With love,    Phil   &   Mhai</div>
-  <br>  
-  <div id="countdown-verse"><i>"I have found the one whom my soul loves."</i> — Song of Solomon 3:4</div>
 
-</footer>
+  <!--Menu-->
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
 
+
+  <!--Gallery-->
+    <h1>Gallery</h1>
+  <section id="gallery" class="floating-gallery">
+
+    <div class="floating-track">
+
+      <!-- set 1 -->
+      <div class="gallery-set">
+        <img src="gallery/1.jpg">
+        <img src="gallery/2.jpg">
+        <img src="gallery/3.jpg">
+        <img src="gallery/4.jpg">
+        <img src="gallery/5.jpg">
+        <img src="gallery/6.jpg">
+      </div>
+
+      <!-- set 2 (duplicate) -->
+      <div class="gallery-set">
+        <img src="gallery/7.jpg">
+        <img src="gallery/8.jpg">
+        <img src="gallery/9.jpg">
+        <img src="images/g4.jpg">
+        <img src="images/hh4.jpg">
+      </div>
+
+      <!-- set 3 -->
+      <div class="gallery-set">
+        <img src="images/g1.jpg">
+        <img src="images/g2.jpg">
+        <img src="images/g3.jpg">
+        <img src="images/g4.jpg">
+        <img src="images/g5.jpg">
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <script>
+  document.querySelectorAll(".gallery-set img").forEach(img => {
+    const offset = Math.random() * 30 - 15;
+    img.style.transform = `translateY(${offset}px)`;
+  });
+  </script>
+
+
+
+
+
+
+
+
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <span class="close">×</span>
+    <img id="lightboxImg">
+  </div>
+
+
+
+  <!--Wedding Party-->
+
+  <!--Guest Info & FAQs-->
+  <section id="guest-info-faq">
+    <div class="glass-inner">
+
+    <h1>Guest Info & FAQs</h1>
+
+    <div class="cards-container">
+
+      <div class="card">
+        <h2>⛪ Wedding Venue</h2>
+        <p>The ceremony will be held at Boracay Newcoast Beach, Boracay Island Aklan, Philippines. 
+
+  The reception will follow at Belmont Hotel Boracay Beachfront.</p>
+      </div>
+
+      <div class="card">
+        <h2>🏨 Free Accommodation</h2>
+        <p>The first 20 guests to reserve will enjoy complimentary accommodation at <a href="#accommodationandtravel">click here</a></p>
+      </div>
+
+      <div class="card">
+        <h2>🎟️ Air Fare and Transportaion</h2>
+        <p>Kindly note that the airfare and land transportation are not included. Guests may arrange their own flights based on their preferred schedule.</p>    
+      </div>
+
+      <div class="card">
+        <h2>👗 Dress Code</h2>
+        <p>To keep things simple and comfortable, guests are kindly requested to prepare their own attire. A "<a href="#details">What to Wear</a>" guide has been shared to help you coordinate with our wedding theme.</p>
+      </div>
+
+      <div class="card">
+        <h2>📝 RSVP</h2>
+        <p><a href="#rsvp">RSVP</a> is strictly required. Kindly confirm your attendance including your companion(if any) on or before February 20, 2026.</p>
+      </div>
+
+      <div class="card">
+        <h2>👶 Kids Policy</h2>
+        <p>Children are warmly welcome! We've arranged fun activities and entertainment to keep the little ones happily engaged throughout the celebration.</p>
+      </div>
+
+      <div class="card">
+        <h2>👨🏻‍👩🏻‍👦🏻‍👦🏻 Guests Itinerary</h2>
+        <p>Guests are not required to follow the itinerary. The itinerary is provided as a guide only. Guests are free to enjoy Boracay Island and plan their activities at their own pace.</p>
+      </div>
+
+      <div class="card">
+        <h2>🌤 Weather Notes</h2>
+        <p>Expect sunny days with occasional showers. Don’t forget your sunscreen!</p>
+      </div>
+
+      <div class="card">
+        <h2>📸 Local Photographer</h2>
+        <p>Guests are welcome to approach the local photographer we've hired for photos.
+            There is no fee, and pictures may be taken using your personal mobile phone.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>🎞️ Share the Memories</h2>
+        <p>May we kindly request to upload or share your photos using the QR code provided.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!--Contact-->
+  <section class="contact" id="contact">
+    <h1>Contact Us</h1>
+
+    <div class="contact-card">
+      <p><span>📞</span> Philipp — <a href="tel:09171074030">0917 107 4030</a></p>
+      <p><span>📞</span> Mhaila — <a href="tel:09199134592">0919 913 4592</a></p>
+    </div>
+  </section>
+
+  <!--Timer-->
+
+
+  <!--RSVP-->
+  <section class="rsvp" id="rsvp">
+    <h1>RSVP</h1>
+    <p>May we kindly request <span class="highlight">confirmation of attendance</span> on or before <span class="highlight">February 20, 2026</span>.</p>
+  <div class="rsvp-container">
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLScUJchKO5QdyL1hWAA9Oe_3NnZysNoIpO9RNPp7w94DgLKUBA/viewform?usp=header"
+      target="_blank"
+      class="rsvp-button">
+      Open RSVP Form
+    </a>
+  </section>
+
+  <footer>
+  <div class="flip-countdown">
+    <div class="flip-card"><span id="flip-days">00</span></div>
+    <div class="flip-card"><span id="flip-hours">00</span></div>
+    <div class="flip-card"><span id="flip-minutes">00</span></div>
+    <div class="flip-card"><span id="flip-seconds">00</span></div>
+  </div>
+  <br>
+  <br>
+
+    <div class="footer-main">With love,    Phil   &   Mhai</div>
+    <br>  
+    <div id="countdown-verse"><i>"I have found the one whom my soul loves."</i> — Song of Solomon 3:4</div>
+
+  </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+    const weddingDate = new Date("2026-03-23T16:00:00").getTime();
+
+    const els = {
+      days: document.getElementById("flip-days"),
+      hours: document.getElementById("flip-hours"),
+      minutes: document.getElementById("flip-minutes"),
+      seconds: document.getElementById("flip-seconds")
+    };
+
+    function flip(el, value) {
+      const newVal = String(value).padStart(2, "0");
+
+      if (el.textContent !== newVal) {
+        el.textContent = newVal;
+        el.parentElement.classList.add("flip");
+        setTimeout(() => el.parentElement.classList.remove("flip"), 600);
+      }
+    }
+
+    function updateCountdown() {
+      const now = Date.now();
+      const diff = weddingDate - now;
+
+      if (diff <= 0) return;
+
+      flip(els.days, Math.floor(diff / (1000 * 60 * 60 * 24)));
+      flip(els.hours, Math.floor((diff / (1000 * 60 * 60)) % 24));
+      flip(els.minutes, Math.floor((diff / (1000 * 60)) % 60));
+      flip(els.seconds, Math.floor((diff / 1000) % 60));
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  });
+  </script>
+
+  <script>
   const weddingDate = new Date("2026-03-23T16:00:00").getTime();
 
-  const els = {
-    days: document.getElementById("flip-days"),
-    hours: document.getElementById("flip-hours"),
-    minutes: document.getElementById("flip-minutes"),
-    seconds: document.getElementById("flip-seconds")
-  };
-
-  function flip(el, value) {
-    const newVal = String(value).padStart(2, "0");
-
-    if (el.textContent !== newVal) {
-      el.textContent = newVal;
-      el.parentElement.classList.add("flip");
-      setTimeout(() => el.parentElement.classList.remove("flip"), 600);
-    }
-  }
-
   function updateCountdown() {
-    const now = Date.now();
-    const diff = weddingDate - now;
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
 
-    if (diff <= 0) return;
+    if (distance < 0) {
+      document.getElementById("countdown-text").innerText =
+        "Just Married 🤍";
+      return;
+    }
 
-    flip(els.days, Math.floor(diff / (1000 * 60 * 60 * 24)));
-    flip(els.hours, Math.floor((diff / (1000 * 60 * 60)) % 24));
-    flip(els.minutes, Math.floor((diff / (1000 * 60)) % 60));
-    flip(els.seconds, Math.floor((diff / 1000) % 60));
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+
+    document.getElementById("countdown-text").innerText =
+      `${days} days • ${hours} hrs • ${minutes} mins`;
   }
 
   updateCountdown();
   setInterval(updateCountdown, 1000);
-});
-</script>
-
-<script>
-const weddingDate = new Date("2026-03-23T16:00:00").getTime();
-
-function updateCountdown() {
-  const now = new Date().getTime();
-  const distance = weddingDate - now;
-
-  if (distance < 0) {
-    document.getElementById("countdown-text").innerText =
-      "Just Married 🤍";
-    return;
-  }
-
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((distance / (1000 * 60)) % 60);
-
-  document.getElementById("countdown-text").innerText =
-    `${days} days • ${hours} hrs • ${minutes} mins`;
-}
-
-updateCountdown();
-setInterval(updateCountdown, 1000);
-</script>
+  </script>
 
 
-<script>
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightboxImg");
-const closeBtn = document.querySelector("#lightbox .close");
+  <script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const closeBtn = document.querySelector("#lightbox .close");
 
-document.querySelectorAll(".masonry-grid img").forEach(img => {
-  img.addEventListener("click", () => {
-    lightboxImg.src = img.src;
-    lightbox.classList.add("show");
+  document.querySelectorAll(".masonry-grid img").forEach(img => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add("show");
+    });
   });
-});
 
-closeBtn.addEventListener("click", () => {
-  lightbox.classList.remove("show");
-});
-
-lightbox.addEventListener("click", e => {
-  if (e.target === lightbox) {
+  closeBtn.addEventListener("click", () => {
     lightbox.classList.remove("show");
-  }
-});
-</script>
+  });
 
-<script>
-const galleryImages = document.querySelectorAll(".masonry-grid img");
-
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
-
-galleryImages.forEach(img => observer.observe(img));
-</script>
-
-<script>
-  const gallery = document.getElementById('gallery');
-
-  let speed = 0.25;      // smaller = slower
-  let paused = false;
-
-  // pause on hover (desktop)
-  gallery.addEventListener('mouseenter', () => paused = true);
-  gallery.addEventListener('mouseleave', () => paused = false);
-
-  function autoScroll() {
-    if (!paused) {
-      gallery.scrollLeft += speed;
-
-      // loop seamlessly
-      if (gallery.scrollLeft >= gallery.scrollWidth - gallery.clientWidth) {
-        gallery.scrollLeft = 0;
-      }
+  lightbox.addEventListener("click", e => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove("show");
     }
-    requestAnimationFrame(autoScroll);
-  }
+  });
+  </script>
 
-  autoScroll();
-</script>
+  <script>
+  const galleryImages = document.querySelectorAll(".masonry-grid img");
 
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
 
-</body>
+  galleryImages.forEach(img => observer.observe(img));
+  </script>
 
+  <script>
+    const gallery = document.getElementById('gallery');
 
-<!-- Place this script at the end of the body -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const envelope = document.getElementById('envelope');
-  const messageEl = document.getElementById('message');
+    let speed = 0.25;      // smaller = slower
+    let paused = false;
 
-  const messageText = "Dear friends and family,\n\nWe are thrilled to share our love and joy with you. Join us as we celebrate our special day together!\n\nWith love, Philipp & Mhaila";
+    // pause on hover (desktop)
+    gallery.addEventListener('mouseenter', () => paused = true);
+    gallery.addEventListener('mouseleave', () => paused = false);
 
-  let opened = false; // ✅ flag to prevent multiple triggers
+    function autoScroll() {
+      if (!paused) {
+        gallery.scrollLeft += speed;
 
-  envelope.addEventListener('click', () => {
-    if (opened) return; // do nothing if already opened
-    opened = true;
-
-    envelope.classList.add('open'); // open flap
-    messageEl.textContent = "";     // reset text
-
-    let i = 0;
-    function typeLetter() {
-      if (i < messageText.length) {
-        messageEl.textContent += messageText[i];
-        i++;
-        setTimeout(typeLetter, 50); // typing speed
+        // loop seamlessly
+        if (gallery.scrollLeft >= gallery.scrollWidth - gallery.clientWidth) {
+          gallery.scrollLeft = 0;
+        }
       }
+      requestAnimationFrame(autoScroll);
     }
 
-    typeLetter();
-  });
-});
-</script>
+    autoScroll();
+  </script>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const cards = document.querySelectorAll('.event-card');
 
-  cards.forEach(card => {
-    card.addEventListener('click', () => {
-      cards.forEach(c => c !== card && c.classList.remove('active'));
-      card.classList.toggle('active');
+  </body>
+
+
+  <!-- Place this script at the end of the body -->
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const envelope = document.getElementById('envelope');
+    const messageEl = document.getElementById('message');
+
+    const messageText = "Dear friends and family,\n\nWe are thrilled to share our love and joy with you. Join us as we celebrate our special day together!\n\nWith love, Philipp & Mhaila";
+
+    let opened = false; // ✅ flag to prevent multiple triggers
+
+    envelope.addEventListener('click', () => {
+      if (opened) return; // do nothing if already opened
+      opened = true;
+
+      envelope.classList.add('open'); // open flap
+      messageEl.textContent = "";     // reset text
+
+      let i = 0;
+      function typeLetter() {
+        if (i < messageText.length) {
+          messageEl.textContent += messageText[i];
+          i++;
+          setTimeout(typeLetter, 50); // typing speed
+        }
+      }
+
+      typeLetter();
     });
   });
-});
-</script>
+  </script>
 
-</html>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.event-card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        cards.forEach(c => c !== card && c.classList.remove('active'));
+        card.classList.toggle('active');
+      });
+    });
+  });
+  </script>
+
+  </html>
