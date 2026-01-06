@@ -72,3 +72,39 @@ document.addEventListener('keydown', e => {
     menuBtn.style.display = 'block';
   }
 });
+
+const weddingDate = new Date("2026-03-23T16:00:00").getTime();
+
+const els = {
+  days: document.getElementById("days"),
+  hours: document.getElementById("hours"),
+  minutes: document.getElementById("minutes"),
+  seconds: document.getElementById("seconds")
+};
+
+function updateFlip(id, value) {
+  const el = els[id];
+  const formatted = String(value).padStart(2, "0");
+
+  if (el.textContent !== formatted) {
+    el.textContent = formatted;
+    el.parentElement.classList.add("flip");
+    setTimeout(() => el.parentElement.classList.remove("flip"), 600);
+  }
+}
+
+function updateCountdown() {
+  const now = Date.now();
+  const diff = weddingDate - now;
+
+  if (diff <= 0) return;
+
+  updateFlip("days", Math.floor(diff / (1000 * 60 * 60 * 24)));
+  updateFlip("hours", Math.floor(diff / (1000 * 60 * 60) % 24));
+  updateFlip("minutes", Math.floor(diff / (1000 * 60) % 60));
+  updateFlip("seconds", Math.floor(diff / 1000 % 60));
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
