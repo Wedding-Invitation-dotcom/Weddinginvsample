@@ -1876,6 +1876,12 @@ p, li, span {
   padding: 60px 20px;
 }
 
+.details-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .collage-overlay {
   position: relative;
   z-index: 2;
